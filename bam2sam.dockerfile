@@ -11,6 +11,6 @@ MAINTAINER Roger Barthelson <rogerab@cyverse.org>
 
 # Update the repository sources list and install samtools package
 RUN apt-get update && apt-get -y install samtools=0.1.19-1  && apt-get clean
-ADD https://github.com/azroger/cyverse_basic_scripts1/archive/v1.0.4.tar.gz /
-RUN tar xvzf /v1.0.4.tar.gz && chmod a+x /cyverse_basic_scripts1-1.0.4/Sam2SortedBam.sh && cp /cyverse_basic_scripts1-1.0.4/Sam2SortedBam.sh /usr/bin
+ADD https://github.com/azroger/cyverse_basic_scripts1/archive/1.0.5.tar.gz /
+RUN tar xvzf /1.0.5.tar.gz && chmod a+x /cyverse_basic_scripts1-1.0.5/Sam2SortedBam.sh && cp /cyverse_basic_scripts1-1.0.5/Sam2SortedBam.sh /usr/bin
 ENTRYPOINT [ "Sam2SortedBam.sh" ]
